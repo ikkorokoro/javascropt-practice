@@ -66,3 +66,8 @@ g();
 const g = function() {
   console.log('c is called');
 }
+
+//jsエンジンによって実行結果が変わってくる可能性がある
+/* 
+googlechome = v8エンジン
+firefox = スパイシーモンキー */
