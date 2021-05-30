@@ -9,6 +9,7 @@ console.log(b);
 //ブラウザ -> 検証 -> sources -> debubber起動させる -> Scope確認
 
 // let,constはスクリプトスコープ
+
 /* var,functionはグローバルオブジェクトのWindowオブジェクトの中に値が格納されている。これがグローバルスコープ
 
 要するにwindowオブジェクト ＝ グローバルスコープである 
