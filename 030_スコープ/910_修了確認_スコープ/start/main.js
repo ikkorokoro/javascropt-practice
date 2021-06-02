@@ -12,9 +12,13 @@ function fn() {
     }
     return a; // ReferenceError: a is not defined
 }
-
 const result = fn();
 console.log(result);
+
+/* {}のなかでletまたはconstで変数宣言をするとブロックスコープを生成され,
+  {}の外で呼び出すことができない
+  なので変数の宣言をブロックスコープの外で行うと関数のスコープ内のため呼び出すことができる
+*/
 
 /**
  * 問題２：
@@ -29,10 +33,13 @@ function fn2() {
         var val = 'val2';
         console.log(val); // 期待値->'val2'
     }
-
+    
     console.log(val); // 期待値->'val1'
 }
 fn2();
+
+/* 
+ */
 
 /**
  * 問題３：
@@ -46,3 +53,15 @@ fn2();
  * increment(); // 期待値->4
  */
 
+// function incrementFactry() {
+//   let num = 0;
+//   function increment() {
+//     num += 1; 
+//     console.log(num)
+//   }
+//   return increment
+// }
+
+{
+
+}
