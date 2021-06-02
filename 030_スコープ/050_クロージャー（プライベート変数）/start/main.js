@@ -53,7 +53,7 @@ inc();
 function incrementFactory() {
   let n = 1;
   function incfac() {
-    numb += 1;
+    n += 1;
     console.log(n);
   }
   return incfac;
