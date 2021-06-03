@@ -61,7 +61,3 @@ fn2();
 //   }
 //   return increment
 // }
-
-{
-
-}

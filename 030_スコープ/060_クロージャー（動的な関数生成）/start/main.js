@@ -4,7 +4,6 @@ addNumberはaddNumberFactoryの中に記述されているためレキシブル�
 関数の引数の値によって生成される関数を変えることができるため、動的な関数として使用できる
 */
 
-
 function addNumberFactory(num) {
   function addNumber(value) {
     return num + value
